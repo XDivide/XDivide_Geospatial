@@ -1,0 +1,104 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background similar to Play Store */
+    color: #202124; /* Google's standard text color */
+}
+
+header {
+    /* Add header styles if needed, e.g., background, padding */
+    padding: 10px 20px;
+    /* background-color: #fff; */ /* Optional white background for header */
+    /* border-bottom: 1px solid #dadce0; */ /* Subtle border */
+}
+
+.banner {
+    height: 300px; /* Adjust height as needed */
+    background: linear-gradient(to bottom right, #e9eff5, #d3cce3, #e8a87c, #c38d9e); /* Gradient inspired by image */
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    padding: 20px 40px; /* More padding for main content */
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto; /* Center content */
+}
+
+.app-info {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* White background for app info section */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 2px 6px 2px rgba(60,64,67,.15); /* Google-like shadow */
+    margin-top: -50px; /* Overlap banner slightly */
+    position: relative; /* Needed for overlap */
+}
+
+.app-logo {
+    width: 72px; /* Size for app logo */
+    height: 72px;
+    border-radius: 50%; /* Circular logo */
+    margin-right: 20px;
+    border: 1px solid #dadce0; /* Subtle border for logo */
+}
+
+.app-text h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 4px 0;
+    color: #202124;
+}
+
+.app-text .tagline {
+    font-size: 16px;
+    font-weight: 500;
+    color: #00875f; /* Google Play's green-ish color for highlights */
+    margin-bottom: 8px;
+}
+
+.app-text p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #5f6368; /* Secondary text color */
+    margin-bottom: 16px;
+}
+
+.app-text a {
+    color: #1a73e8; /* Google's standard link color */
+    text-decoration: none;
+}
+
+.app-text a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 12px;
+    color: #5f6368;
+    border-top: 1px solid #dadce0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    .app-info {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: -30px; /* Adjust overlap for smaller screens */
+        padding: 15px;
+    }
+
+    .app-logo {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+} 
